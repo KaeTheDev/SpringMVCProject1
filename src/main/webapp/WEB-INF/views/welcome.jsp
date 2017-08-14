@@ -4,10 +4,10 @@
     <title>WELCOME!</title>
 </head>
 <body>
-<h1>Welcome Page</h1>
-${message}<br/>
-The line above came from the model, named "message"
-<br>
-<a href="userform">Go to the user form</a>
+<h1>GRAND CIRCUS COFFEE SHOP</h1>
+<!--${message}<br/> -->
+Welcome to GC Coffee
+
+<a href="userform">Register!</a>
 </body>
 </html>

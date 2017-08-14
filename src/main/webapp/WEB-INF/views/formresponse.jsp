@@ -4,9 +4,15 @@
     <title>Form Response</title>
 </head>
 <body>
-Thank you for submitting your info! <br>
-${name}<br>
-${email}<br>
+Hello ${firstname}!
 
+Thank you for submitting your info! <br>
+<!--
+${firstname}<br>
+${lastname}<br>
+${phonenumber}<br>
+${password}<br>
+${email}<br>
+-->
 </body>
 </html>

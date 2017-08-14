@@ -27,12 +27,18 @@ public class HomeController
     }
 
     @RequestMapping("/formhandler")
-            public ModelAndView formhandler (@RequestParam("name")String name,
+            public ModelAndView formhandler (@RequestParam("firstname")String firstname,
+                                             @RequestParam("lastname") String lastname,
+                                             @RequestParam("phonenumber") long phonenumber,
+                                             @RequestParam("password") String password,
                                              @RequestParam("email")String email)
     {
         ModelAndView mv = new ModelAndView("formresponse");
-        mv.addObject("name", name);
+        mv.addObject("firstname", firstname);
+        mv.addObject("lastname", lastname);
+        mv.addObject("phonenumber", phonenumber);
         mv.addObject("email", email);
+        mv.addObject("password", password);
         return mv;
     }
 
