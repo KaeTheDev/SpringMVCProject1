@@ -1,11 +1,14 @@
 package com.test.util;
 
+import model.DAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.jws.WebParam;
+import java.sql.*;
+import java.util.ArrayList;
 
 @Controller
 public class HomeController
@@ -21,7 +24,7 @@ public class HomeController
     }
 
     @RequestMapping ("/userform")
-    public ModelAndView userfom()
+    public ModelAndView userform()
     {
         return new ModelAndView("form", "inst", "Please enter info: ");
     }
@@ -32,7 +35,16 @@ public class HomeController
                                              @RequestParam("phonenumber") long phonenumber,
                                              @RequestParam("password") String password,
                                              @RequestParam("email")String email)
+            //Server Side Validation
     {
+
+        //add info to the DB through DAO
+
+        boolean result = DAO.formhandler(firstname, lastname, phonenumber, password, email);
+
+
+
+
         ModelAndView mv = new ModelAndView("formresponse");
         mv.addObject("firstname", firstname);
         mv.addObject("lastname", lastname);

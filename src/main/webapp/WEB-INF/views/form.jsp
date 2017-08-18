@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>User Form</title>
+    <link href="/resources/css/styles.css" rel="stylesheet">
     <script>
         function Validation()
         {
@@ -54,29 +55,45 @@
 
 
 
-
     ${inst}
     <form name = "customerinfo" action="formhandler" onsubmit="return Validation()" method = "post">
 
-        First Name: <input type = "text" name = "firstname"><br>
-        Last Name: <input type ="text" name ="lastname"><br>
+        <fieldset>
 
-        <br>
+            <legend> Personal Information </legend>
 
-        <input type="radio" name="gender" value="male"> Male<br>
-        <input type="radio" name="gender" value="female"> Female<br>
+            First Name: <br>
+            <input type = "text" name = "firstname"><br>
 
-        <br>
+            Last Name: <br>
+            <input type = "text" name = "lastname"><br>
 
-    Email: <input type ="text" name = "email"><br>
-    Phone Number: <input type = "number" name = "phonenumber"><br>
-    Password: <input type = "password" name = "password"><br>
+            Email: <br>
+            <input type = "text" name = "email"><br>
 
-    <input type = "submit" name = "submit" values ="Submit">
+            Phone Number: <br>
+            <input type = "text" name = "phonenumber"><br>
+
+            Password: <br>
+            <input type = "password" name ="passwword"><br>
+
+            Re-Enter Password: <br>
+            <input type = "password" name = "password"><br>
+
+            <br>
+
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+
+            <br>
+
+            <input type = "submit" name = "submit" values ="Submit">
+            <input type="reset">
+            <a href = "/">Home</a>
+        </fieldset>
+
+
 
     </form>
-
-
-
 </body>
 </html>

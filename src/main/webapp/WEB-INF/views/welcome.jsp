@@ -2,12 +2,22 @@
 <html>
 <head>
     <title>WELCOME!</title>
+    <link rel="stylesheet" href="/resources/CSS/style.css">
 </head>
 <body>
-<h1>GRAND CIRCUS COFFEE SHOP</h1>
+<div ID = "CompanyTitle">GRAND CIRCUS COFFEE SHOP</div>
 <!--${message}<br/> -->
-Welcome to GC Coffee
 
-<a href="userform">Register!</a>
+<br>
+
+<div ID = "Welcome">Welcome!</div>
+
+
+
+    <a href="userform">Click Here To Register</a>
+    <br>
+    <a href = "/getAllItems">View Coffee Items</a>
+
+
 </body>
 </html>

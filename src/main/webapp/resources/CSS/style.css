@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
+body
+{
+    background-image: url("https://res.cloudinary.com/dbjlkr9db/image/upload/v1502802384/coffee-shop-sign-8486484_qnfiz8.jpg");
+    background-size: auto;
+    background-repeat: repeat;
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 0;
+
+}
+
+#CompanyTitle
+{
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+}
+
+#Welcome
+{
+    text-align: center;
+}
+
